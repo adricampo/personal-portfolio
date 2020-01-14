@@ -1,0 +1,286 @@
+.home-page .myName {
+  position: relative;
+  top: 11vh;
+  width: 100%;
+  height: 59vh;
+  display: flex;
+  justify-content: space-evenly;
+  background: whitesmoke;
+  align-items: center;
+}
+.home-page .myName .background {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+.home-page .myName .background__profile-photo {
+  height: 59vh;
+  margin-left: 15%;
+}
+.home-page .myName .titles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+}
+.home-page .myName .titles h4 {
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.home-page .myName .titles h5 {
+  font-size: 110%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 2%;
+}
+.home-page .myName .titles__button {
+  width: 27vh;
+  height: 8vh;
+  border: 2px solid;
+  border-radius: 6rem;
+  background: steelblue;
+  margin-top: 4%;
+  font-size: 120%;
+}
+.home-page .myName .titles__button:hover {
+  cursor: pointer;
+  background: #3690ff94;
+  color: black;
+  transform: scale(1.2) perspective(1px);
+}
+.home-page h2 {
+  font-size: 500%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Baloo Bhai";
+}
+.home-page h3 {
+  font-size: 180%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 3%;
+}
+.home-page .contact {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: lightskyblue;
+  position: relative;
+  top: 11vh;
+}
+.home-page .contact .socialmedia {
+  width: 60%;
+  padding: 1%;
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3%;
+}
+.home-page .contact .socialmedia__info {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-page .contact .socialmedia__icon {
+  max-width: 10vw;
+  max-height: 12vh;
+  margin: 0.5%;
+}
+.home-page .contact .socialmedia__icon:hover {
+  cursor: pointer;
+  transform: scale(1.3) perspective(1px);
+}
+.home-page .contact .email-phone {
+  width: 70%;
+  padding: 1%;
+  align-self: center;
+}
+.home-page .contact .email-phone__intro {
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 3%;
+}
+.home-page .contact .email-phone .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.home-page .contact .email-phone .box .email {
+  padding: 1%;
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+.home-page .contact .email-phone .box .email__icon {
+  max-width: 7vw;
+  max-height: 12vh;
+  margin: 0.5%;
+}
+.home-page .contact .email-phone .box .email p {
+  width: 40%;
+  align-self: center;
+  font-size: 120%;
+}
+.home-page .contact .email-phone .box .phone {
+  padding: 1%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.home-page .contact .email-phone .box .phone__icon {
+  max-width: 7vw;
+  max-height: 12vh;
+  margin: 0.5%;
+}
+.home-page .contact .email-phone .box .phone p {
+  width: 40%;
+  align-self: center;
+  font-size: 120%;
+}
+.home-page .contact .email-phone__end {
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 14vh;
+  width: 100vw;
+}
+.projects .box {
+  display: flex;
+  flex-direction: column;
+  height: 81vh;
+  width: 90%;
+  align-self: center;
+}
+.projects .box .images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+  height: 65%;
+  width: 100%;
+  border-bottom: solid 1px;
+}
+.projects .box .images__image {
+  width: 13vw;
+  height: 44vh;
+  align-self: center;
+}
+.projects .box__project-info {
+  width: 100%;
+  height: 40%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 1%;
+}
+
+.bolder {
+  font-weight: 900;
+  font-size: 115%;
+}
+
+.about-me {
+  position: relative;
+  top: 11vh;
+  height: 89vh;
+}
+.about-me .welcome {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.about-me .welcome__image {
+  width: 60vw;
+  height: 80vh;
+  border-radius: 300rem;
+  margin-top: 3%;
+  margin-left: 2%;
+  background: aliceblue;
+}
+.about-me .welcome .info {
+  width: 100%;
+  padding: 2%;
+  align-self: center;
+}
+.about-me .welcome .info__title {
+  font-size: 180%;
+}
+.about-me .welcome .info p {
+  margin-top: 3%;
+  letter-spacing: 1.5px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: midnightblue;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: steelblue;
+  font-size: 200%;
+  font-weight: bold;
+}
+.nav .nav-menu__item {
+  font-family: "Baloo Bhai";
+  font-size: 110%;
+  color: black;
+}
+.nav .nav-menu__item:hover {
+  cursor: pointer;
+  color: lightskyblue;
+  transform: scale(1.2) perspective(1px);
+}
+.nav .nav-menu__logo {
+  max-width: 8vw;
+  height: 9.5vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*# sourceMappingURL=index.css.map */

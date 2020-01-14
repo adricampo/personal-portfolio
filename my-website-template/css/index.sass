@@ -1,0 +1,58 @@
+@import ./home-page/home-page
+@import ./projects/projects
+@import ./about-me/about-me
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: 'Montserrat'
+
+.hide
+    display: none
+
+a
+    text-decoration: none
+    color: midnightblue
+
+body
+    height: 100vh
+    width: 100vw
+
+.nav
+    position: absolute
+    z-index: 10
+    width: 100%
+    height: 11vh
+    display: flex
+    justify-content: space-around
+    align-items: center
+    background-color: steelblue
+    font-size: 200%
+    font-weight: bold
+    .nav-menu
+        &__item
+            font-family: 'Baloo Bhai'
+            font-size: 110%
+            color: black
+            &:hover
+                cursor: pointer
+                color: lightskyblue
+                transform: scale(1.2) perspective(1px)
+        &__logo
+            max-width: 8vw
+            height: 9.5vh
+            display: flex
+            justify-content: flex-start
+
+// .footer
+//     position: relative
+//     top: 96vh
+//     height: 4vh
+//     background-color: steelblue
+//     align-items: center
+//     &__important-info
+//         display: flex
+//         flex-direction: row
+//         justify-content: center
+//         font-size: 120%
