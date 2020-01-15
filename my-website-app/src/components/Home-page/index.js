@@ -1,6 +1,6 @@
 import React from 'react'
-// import './index.sass'
-export default function ({}) {
+import './index.sass'
+export default function ({onProjects}) {
     return <>
             <section className="home-page">
             <section className="myName">
@@ -11,7 +11,11 @@ export default function ({}) {
                     <h2>Hi I'm Adri Campo</h2>
                     <h4>Junior Full-Stack Developer</h4>
                     <h5>based in Badalona, researching the intersection between technology and mental illness 🤪✌🏻</h5>
-                    <button className="titles__button">Check out my work</button>
+                    <button className="titles__button" onClick={event => {
+                        event.preventDefault()
+
+                        onProjects(); 
+                    }}>Check out my work</button>
                 </div>
             </section>
             <section className="contact">
