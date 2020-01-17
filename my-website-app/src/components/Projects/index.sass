@@ -1,18 +1,34 @@
 .projects-nav
-    position: absolute
-    top: 13vh
-    left: 2vw
-    z-index: 100
-    width: 10%
-    height: 85vh
-    display: flex
-    flex-direction: column
-    justify-content: space-around
-    align-items: center
-    background-color: skyblue
-    font-size: 175%
-    font-weight: bold
-    border: 2px solid steelblue
+    @media only screen and (max-width: 1023px)
+        position: absolute
+        top: 12vh
+        left: 2vw
+        z-index: 100
+        width: 93%
+        height: 8vh
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        background-color: skyblue
+        font-size: 175%
+        font-weight: bold
+        border: 2px solid steelblue
+    @media only screen and (min-width: 1024px)
+        position: absolute
+        top: 13vh
+        left: 2vw
+        z-index: 100
+        width: 12%
+        height: 85vh
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        background-color: skyblue
+        font-size: 175%
+        font-weight: bold
+        border: 2px solid steelblue
     .nav-menu
         &__item
             font-family: 'Baloo Bhai'

@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.sass'
-export default function ({onTime2Padel, onSkyBeer}) {
+export default function ({onTime2Padel, onSkyBeer, onPersonalWebsite}) {
     return <>
             <nav className="projects-nav nav-menu">
                 <a href="#" class="nav-menu__item link" onClick={event => {
@@ -13,9 +13,11 @@ export default function ({onTime2Padel, onSkyBeer}) {
 
                 onSkyBeer(); 
             }}>SkyBeer</a>
-                <a href="#" class="nav-menu__item link"></a>
-                <a href="#" class="nav-menu__item link"></a>
-                <a href="#" class="nav-menu__item link"></a>
+                <a href="#" class="nav-menu__item link" onClick={event => {
+                event.preventDefault()
+
+                onPersonalWebsite(); 
+            }}>PersonalWebsite</a>
             </nav>
        
     </>

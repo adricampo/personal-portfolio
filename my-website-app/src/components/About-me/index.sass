@@ -8,22 +8,49 @@
     background: whitesmoke
     .welcome
         width: 100vw
-        height: 100%
         display: flex
-        flex-direction: row
+        @media only screen and (max-width: 1023px)
+            flex-direction: column
+            display: flex
+            align-items: center
+            height: 88vh
+        @media only screen and (min-width: 1024px)
+            flex-direction: row
+            height: 100vh
         &__image
-            min-width: 34vw
-            height: 80vh
-            margin-top: 3%
-            margin-left: 2%
-           
+            @media only screen and (max-width: 1023px)
+                height: 200px
+                width: 200px
+                margin-top: 3%
+                border: 1px solid
+                object-fit: contain
+                border-radius: 50%
+            @media only screen and (min-width: 1024px)
+                min-width: 34vw
+                height: 80vh
+                margin-top: 3%
+                margin-left: 2%
+
         .info
             width: 100%
-            padding: 2%
+            padding: 3%
             align-self: center
+            height: 95%
             &__title
-                font-size: 180%
-                font-family: 'Baloo Bhai'
+                @media only screen and (max-width: 1023px)
+                    font-size: 130%
+                    font-family: 'Baloo Bhai'
+                    display: flex
+                    justify-content: center
+                @media only screen and (min-width: 1024px)
+                    font-size: 180%
+                    font-family: 'Baloo Bhai'
             &__text
-                letter-spacing: 1.5px
-                line-height: 25px
+                @media only screen and (max-width: 1023px)
+                    font-size: 60%
+                    line-height: 15px
+                    margin-left: 2.5%
+                    margin-top: -3%
+                @media only screen and (min-width: 1024px)
+                    letter-spacing: 1.5px
+                    line-height: 25px

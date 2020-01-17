@@ -11,6 +11,7 @@ import Projects from '../Projects'
 import ProjectsContainer from '../Projects-container'
 import Time2Padel from '../Time2Padel'
 import SkyBeer from '../SkyBeer'
+import PersonalWebsite from '../Personal-website'
 
 export default withRouter(function ({ history }) { 
     
@@ -25,7 +26,10 @@ export default withRouter(function ({ history }) {
 // PROJECTS
 
     function handleGoToTime2Padel() { history.push('/time2padel')}
+
     function handleGoToSkyBeer() { history.push('/skybeer')}
+
+    function handleGoToPersonalWebsite() { history.push('/personal-website')}
 
 // ROUTES
 
@@ -35,9 +39,10 @@ export default withRouter(function ({ history }) {
                     <Route exact path="/" render={() => <Redirect to="/home-page" /> }/>
                     <Route path="/home-page" render={() => <HomePage onProjects={handleGoToProjects} /> }/>  
                     <Route path="/about-me" render={() => <AboutMe /> }/>
-                    <Route path="/projects-container" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer}/>  <Time2Padel /> </> }/> 
-                    <Route path="/time2padel" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} /> <Time2Padel /> </> }/> 
-                    <Route path="/skybeer" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} /> <SkyBeer /> </> }/>
+                    <Route path="/projects-container" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} />  <Time2Padel /> </> }/> 
+                    <Route path="/time2padel" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} /> <Time2Padel /> </> }/> 
+                    <Route path="/skybeer" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} /> <SkyBeer /> </> }/>
+                    <Route path="/personal-website" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} /> <PersonalWebsite /> </> }/>
             </> }
 
         </>
