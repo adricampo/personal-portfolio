@@ -11,9 +11,17 @@ export default function () {
                             <img className="images__image" src="./img/website4.png"/>
                         </div>
                         <div className="box__project-info">
-                            <h3>Peronsal Website 🖥</h3>
+                            <div className="box__title">
+                                <h3>Personal Website  🖥</h3>
+                            </div>
+                            <div className="box__direct-access">
+                                <p>Have a look to the project</p>
+                                <a className="box__container link" href="https://time2padel.herokuapp.com/">
+                                    <img className="box__icon" src="./img/zoom.png" href="https://time2padel.herokuapp.com/"/>
+                                </a>
+                            </div>
                             <p className="box__text">
-                                Project duration: 1 week <br />
+                                Project duration: 2/3 days <br />
                                 <br /> This project is a personal website to show my projects, information an more. 
                                 It's a visual way to open a door between myself and the world. Feel free to have a look, make me comments and give me any feedback to improve it.             
                             </p>

@@ -12,6 +12,9 @@ import ProjectsContainer from '../Projects-container'
 import Time2Padel from '../Time2Padel'
 import SkyBeer from '../SkyBeer'
 import PersonalWebsite from '../Personal-website'
+import GnomesReact from '../Gnomes-react'
+import GnomesRedux from '../Gnomes-redux'
+
 
 export default withRouter(function ({ history }) { 
     
@@ -31,6 +34,10 @@ export default withRouter(function ({ history }) {
 
     function handleGoToPersonalWebsite() { history.push('/personal-website')}
 
+    function handleGoToGnomesReact() { history.push('/gnomes-react')}
+
+    function handleGoToGnomesRedux() { history.push('/gnomes-redux')}
+
 // ROUTES
 
     return ( 
@@ -39,10 +46,12 @@ export default withRouter(function ({ history }) {
                     <Route exact path="/" render={() => <Redirect to="/home-page" /> }/>
                     <Route path="/home-page" render={() => <HomePage onProjects={handleGoToProjects} /> }/>  
                     <Route path="/about-me" render={() => <AboutMe /> }/>
-                    <Route path="/projects-container" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} />  <Time2Padel /> </> }/> 
-                    <Route path="/time2padel" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} /> <Time2Padel /> </> }/> 
-                    <Route path="/skybeer" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} /> <SkyBeer /> </> }/>
-                    <Route path="/personal-website" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} /> <PersonalWebsite /> </> }/>
+                    <Route path="/projects-container" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} onGnomesReact={handleGoToGnomesReact} onGnomesRedux={handleGoToGnomesRedux} />  <Time2Padel /> </> }/> 
+                    <Route path="/time2padel" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} onGnomesReact={handleGoToGnomesReact} onGnomesRedux={handleGoToGnomesRedux} /> <Time2Padel /> </> }/> 
+                    <Route path="/skybeer" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} onGnomesReact={handleGoToGnomesReact} onGnomesRedux={handleGoToGnomesRedux} /> <SkyBeer /> </> }/>
+                    <Route path="/personal-website" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} onGnomesReact={handleGoToGnomesReact} onGnomesRedux={handleGoToGnomesRedux} /> <PersonalWebsite /> </> }/>
+                    <Route path="/gnomes-react" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} onGnomesReact={handleGoToGnomesReact} onGnomesRedux={handleGoToGnomesRedux} /> <GnomesReact /> </> }/>
+                    <Route path="/gnomes-redux" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} onGnomesReact={handleGoToGnomesReact} onGnomesRedux={handleGoToGnomesRedux} /> <GnomesRedux /> </> }/>
             </> }
 
         </>

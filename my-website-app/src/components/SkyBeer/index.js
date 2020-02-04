@@ -11,7 +11,15 @@ export default function ({}) {
                             <img className="images__image" src="./img/skyBeer4.png"/>
                         </div>
                         <div className="box__project-info">
-                            <h3>SkyBeer 🍺</h3>
+                            <div clasName="box__title">
+                                <h3>SkyBeer 🍺</h3>
+                            </div>
+                            <div className="box__direct-access">
+                                <p>Have a look to the project</p>
+                                <a className="box__container link" href="https://oscarerre.github.io/sky-beer">
+                                    <img className="box__icon" src="./img/zoom.png" href="https://oscarerre.github.io/sky-beer"/>
+                                </a>
+                            </div>
                             <p className="box__text">
                                 Project duration: 1 week <br />
                                 <br />For the project we had to chose a public use API to develop an App with React. Using AJAX methodology, we had to obtain information from the API using calls. 

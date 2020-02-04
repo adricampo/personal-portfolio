@@ -1,13 +1,14 @@
 .projects-nav
     @media only screen and (max-width: 1023px)
         position: absolute
+        overflow-x: auto
+        display: flex
+        flex-direction: column
         top: 12vh
         left: 2vw
         z-index: 100
-        width: 93%
-        height: 8vh
-        display: flex
-        flex-direction: row
+        width: 95vw
+        height: 30vh
         justify-content: space-around
         align-items: center
         background-color: skyblue
@@ -16,11 +17,12 @@
         border: 2px solid steelblue
     @media only screen and (min-width: 1024px)
         position: absolute
+        overflow: auto
         top: 13vh
         left: 2vw
         z-index: 100
         width: 12%
-        height: 85vh
+        height: 92vh
         display: flex
         flex-direction: column
         justify-content: space-around
