@@ -4,7 +4,7 @@ export default function ({}) {
     return <>
         <section className="about-me">
             <div className="about-me__welcome welcome">
-                <img className="welcome__image" src="./img/aboutme-photo2.png"/>
+                <img className="welcome__image" src="./img/aboutme-photo1.jpg"/>
                 <div className="welcome__info info">
                     <h2 className="info__title title">LITTLE SUMARY OF MY STORY..</h2>
                     <br />

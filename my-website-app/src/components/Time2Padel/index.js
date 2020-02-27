@@ -15,7 +15,7 @@ export default function ({}) {
                                 <h3>Time2Padel 🎾</h3>
                             </div>
                             <div className="box__direct-access">
-                                <p>Have a look to the project</p>
+                                <p>Have a look to the project :</p>
                                 <a className="box__container link" href="https://time2padel.herokuapp.com/">
                                     <img className="box__icon" src="./img/zoom.png" href="https://time2padel.herokuapp.com/"/>
                                 </a>
