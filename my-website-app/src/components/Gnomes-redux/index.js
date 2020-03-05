@@ -16,8 +16,8 @@ export default function () {
                             </div>
                             <div className="box__direct-access">
                                 <p>Have a look to the project</p>
-                                <a className="box__container link" href="https://sharp-shirley-d9dca7.netlify.com">
-                                    <img className="box__icon" src="./img/zoom.png" href="https://sharp-shirley-d9dca7.netlify.com"/>
+                                <a className="box__container link" href="https://gnomes-redux.netlify.com">
+                                    <img className="box__icon" src="./img/zoom.png" href="https://gnomes-redux.netlify.com"/>
                                 </a>
                             </div>
                             <p className="box__text">
