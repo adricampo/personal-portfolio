@@ -3,36 +3,32 @@
     font-size: 115%
 .about-me
     position: relative
-    top: 11vh
+    top: 13vh
+    width: 100vw
+    @media only screen and (max-width: 1023px)
+        top: 15vh
     .welcome
-        width: 100vw
         display: flex
         @media only screen and (max-width: 1023px)
             flex-direction: column
             display: flex
             align-items: center
-            height: 88vh
         @media only screen and (min-width: 1024px)
             flex-direction: row
-            height: 100vh
         &__image
             @media only screen and (max-width: 1023px)
                 height: 200px
-                width: 200px
-                margin-top: 5%
                 object-fit: contain
-
+                border-radius: 1rem
             @media only screen and (min-width: 1024px)
-                min-width: 34vw
-                height: 80%
-                margin-top: 3%
-                margin-left: 2%
-                border-radius: 2rem
+                min-width: 35vw
+                max-height: 87vh
+                border-radius: 3rem
+                padding: 2%
         .info
             width: 100%
             padding: 3%
             align-self: flex-start
-            height: 75%
             &__title
                 @media only screen and (max-width: 1023px)
                     font-size: 130%
@@ -42,6 +38,7 @@
                 @media only screen and (min-width: 1024px)
                     font-size: 180%
                     font-family: 'Baloo Bhai'
+                    color: black
             &__text
                 @media only screen and (max-width: 1023px)
                     font-size: 60%

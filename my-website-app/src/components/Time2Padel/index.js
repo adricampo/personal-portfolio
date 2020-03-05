@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.sass'
-export default function ({}) {
+export default function () {
     return <>
             <section className="time2padel">
                     <div className="time2padel__box box">

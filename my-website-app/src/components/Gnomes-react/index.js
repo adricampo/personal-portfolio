@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.sass'
-export default function ({}) {
+export default function () {
     return <>
             <section className="gnomes-react">
                     <div className="gnomes-react__box box">

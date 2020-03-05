@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.sass'
-export default function ({}) {
+export default function () {
     return <>
             <section className="skybeer">
                     <div className="projects__box box">
@@ -11,7 +11,7 @@ export default function ({}) {
                             <img className="images__image" src="./img/skyBeer4.png"/>
                         </div>
                         <div className="box__project-info">
-                            <div clasName="box__title">
+                            <div className="box__title">
                                 <h3>SkyBeer 🍺</h3>
                             </div>
                             <div className="box__direct-access">

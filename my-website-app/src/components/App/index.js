@@ -14,6 +14,7 @@ import SkyBeer from '../SkyBeer'
 import PersonalWebsite from '../Personal-website'
 import GnomesReact from '../Gnomes-react'
 import GnomesRedux from '../Gnomes-redux'
+import AdevintaVanilla from '../Adevinta-vanilla'
 
 
 export default withRouter(function ({ history }) { 
@@ -38,6 +39,9 @@ export default withRouter(function ({ history }) {
 
     function handleGoToGnomesRedux() { history.push('/gnomes-redux')}
 
+    function handleGoToAdevintaVanilla() { history.push('/adevinta-vanilla')}
+
+
 // ROUTES
 
     return ( 
@@ -46,12 +50,15 @@ export default withRouter(function ({ history }) {
                     <Route exact path="/" render={() => <Redirect to="/home-page" /> }/>
                     <Route path="/home-page" render={() => <HomePage onProjects={handleGoToProjects} /> }/>  
                     <Route path="/about-me" render={() => <AboutMe /> }/>
-                    <Route path="/projects-container" render={() => <ProjectsContainer /> && <> <Projects onTime2Padel={handleGoToTime2Padel} onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} onGnomesReact={handleGoToGnomesReact} onGnomesRedux={handleGoToGnomesRedux} /> </> }/> 
+                    <Route path="/projects-container" render={() => <ProjectsContainer /> && <Projects onTime2Padel={handleGoToTime2Padel} 
+                        onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} onGnomesReact={handleGoToGnomesReact} 
+                        onGnomesRedux={handleGoToGnomesRedux} onAdevintaVanilla={handleGoToAdevintaVanilla} /> }/> 
                     <Route path="/time2padel" render={() => <Time2Padel /> }/> 
                     <Route path="/skybeer" render={() => <SkyBeer /> }/>
                     <Route path="/personal-website" render={() => <PersonalWebsite /> }/>
                     <Route path="/gnomes-react" render={() => <GnomesReact /> }/>
                     <Route path="/gnomes-redux" render={() => <GnomesRedux /> }/>
+                    <Route path="/adevinta-vanilla" render={() => <AdevintaVanilla /> }/>
             </> }
 
         </>
