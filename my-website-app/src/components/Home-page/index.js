@@ -11,7 +11,7 @@ export default function ({ onProjects }) {
                     <div className="container__titles titles">
                         <h2>Hi I'm Adri Campo</h2>
                         <h4>Junior Full-Stack Developer</h4>
-                        <h5>based in Badalona, researching the intersection between technology and mental illness 🤪✌🏻</h5>
+                        <h5>living and learning in Badalona, Barcelona 😎✌🏻</h5>
                         <button className="titles__button" onClick={event => {
                             event.preventDefault()
 
