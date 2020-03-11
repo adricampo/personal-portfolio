@@ -12,7 +12,7 @@ export default function () {
                         </div>
                         <div className="box__project-info">
                             <div className="box__title">
-                                <h3>Gnomes-redux 🍄</h3>
+                                <h3>AXA Gnomes Test Redux 🍄</h3>
                             </div>
                             <div className="box__direct-access">
                                 <p>Have a look to the project</p>
@@ -21,7 +21,7 @@ export default function () {
                                 </a>
                             </div>
                             <p className="box__text">
-                                Project duration: 3/4 days <br />
+                                Technologies used: HTML, CSS, SASS, Javascript, React, Redux, Node.js <br />
                                 <br />Gnomes-redux is an individual project developed using React with Redux, version thunk.
                                 The project has a landing page, another view with a search component that allows the user to find by 
                                 query and also chose some filters to make a more accurate search and the results, and the last view 

@@ -21,7 +21,7 @@ export default function () {
                                 </a>
                             </div>
                             <p className="box__text">
-                                Project duration: 1 week <br />
+                                Technologies used: HTML, CSS, SASS, Javascript, React, TDD <br />
                                 <br />For the project we had to chose a public use API to develop an App with React. Using AJAX methodology, we had to obtain information from the API using calls. 
                                 The App allowed users to register and authenticate, make different searches and save/list favorites. 
                                 Additionally, for the project we implemented a rating system that allowed users to rank the articles.  

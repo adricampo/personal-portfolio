@@ -1,48 +1,46 @@
 .projects-nav
     @media only screen and (max-width: 1023px)
-        position: absolute
+        width: 96%
+        height: 100%
+        display: grid
+        grid-template-areas: "padel" "beer" "portfolio" "gnomesreact" "gnomesredux" "adevinta"
+        grid-template-rows: 17% 17% 17% 17% 17% 17%
+        grid-template-columns: 100%
+
         overflow-x: auto
-        display: flex
-        flex-direction: column
-        top: 15vh
-        left: 2vw
-        z-index: 100
-        width: 95vw
-        height: 100%
-        justify-content: space-around
-        align-items: center
-        font-size: 105%
-        font-weight: bold
-    @media only screen and (min-width: 1024px)
         position: absolute
-        overflow: auto
-        top: 15vh
+        top: 14vh
         left: 2vw
         z-index: 100
-        width: 95%
-        height: 100%
-        display: flex
-        flex-direction: column
-        justify-content: space-around
+        align-items: center
+        font-size: 80%
+        font-weight: bold
+        margin-bottom: 2%
+    @media only screen and (min-width: 1024px)
+        width: 99%
+        display: grid
+        grid-template-areas: "padel padel beer" "portfolio gnomesreact gnomesreact" "gnomesredux gnomesredux adevinta"
+        grid-template-rows: 33% 33% 33%
+        grid-template-columns: 33% 33% 33%
+
+        overflow: auto
+        position: absolute
+        top: 15vh
+        left: 1vw
+        z-index: 100
         align-items: center
         font-size: 175%
         font-weight: bold
     .nav-menu
-        height: 20vh
-        width: 90vw
-        background-color: #e5eaf0
-        border: 2px solid steelblue
-        cursor: pointer
-
         &__item-container1
-            height: 15vh
-            width: 95vw
+            grid-area: padel
+            height: 28vh
             cursor: pointer
             background: url("/img/time2padel-bg.jpg")
             background-repeat: no-repeat
             background-size: cover
             @media only screen and (max-width: 1023px)
-                height: 12vh
+                height: 16vh
         &__item1
             height: 100%
             display: flex
@@ -58,14 +56,14 @@
                 transform: scale(1.1) perspective(1px)
 
         &__item-container2
-            height: 15vh
-            width: 95vw
+            grid-area: beer
+            height: 28vh
             cursor: pointer
             background: url("/img/beer-bg.jpg")
             background-repeat: no-repeat
             background-size: cover
             @media only screen and (max-width: 1023px)
-                height: 12vh
+                height: 16vh
         &__item2
             height: 100%
             display: flex
@@ -81,14 +79,14 @@
                 transform: scale(1.1) perspective(1px)
 
         &__item-container3
-            height: 15vh
-            width: 95vw
+            grid-area: portfolio
+            height: 28vh
             cursor: pointer
             background: url("/img/portfolio-bg.jpg")
             background-repeat: no-repeat
             background-size: cover
             @media only screen and (max-width: 1023px)
-                height: 12vh
+                height: 16vh
         &__item3
             height: 100%
             display: flex
@@ -104,14 +102,14 @@
                 transform: scale(1.1) perspective(1px)
 
         &__item-container4
-            height: 15vh
-            width: 95vw
+            grid-area: gnomesreact
+            height: 28vh
             cursor: pointer
             background: url("/img/gnomeworld-bg.png")
             background-repeat: no-repeat
             background-size: cover
             @media only screen and (max-width: 1023px)
-                height: 12vh
+                height: 16vh
         &__item4
             height: 100%
             display: flex
@@ -127,14 +125,14 @@
                 transform: scale(1.1) perspective(1px)
 
         &__item-container5
-            height: 15vh
-            width: 95vw
+            grid-area: gnomesredux
+            height: 28vh
             cursor: pointer
             background: url("/img/gnomeworld-bg.png")
             background-repeat: no-repeat
             background-size: cover
             @media only screen and (max-width: 1023px)
-                height: 12vh
+                height: 16vh
         &__item5
             height: 100%
             display: flex
@@ -150,14 +148,14 @@
                 transform: scale(1.1) perspective(1px)
 
         &__item-container6
-            height: 15vh
-            width: 95vw
+            grid-area: adevinta
+            height: 28vh
             cursor: pointer
             background: url("/img/adevinta-bg.png")
             background-repeat: no-repeat
             background-size: cover
             @media only screen and (max-width: 1023px)
-                height: 12vh
+                height: 16vh
         &__item6
             height: 100%
             display: flex

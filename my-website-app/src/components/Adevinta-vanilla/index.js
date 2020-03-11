@@ -12,7 +12,7 @@ export default function () {
                         </div>
                         <div className="box__project-info">
                             <div className="box__title">
-                                <h3>Adevinta 🎥</h3>
+                                <h3>Adevinta Movies/Series Test 🎥</h3>
                             </div>
                             <div className="box__direct-access">
                                 <p>Have a look to the project :</p>
@@ -21,7 +21,7 @@ export default function () {
                                 </a>
                             </div>
                             <p className="box__text">
-                                Project duration: 3/4 days<br />
+                                Technologies used: HTML, CSS, SASS, Javascript<br />
                                 <br />Adevinta Test Vanilla, is a technical test done without using any framework, pure javascript. The app lets the
                                 user to search movies through external API calls and once the results are retrieved, give the user the possibility to
                                 sort by published year or the rating.<br />

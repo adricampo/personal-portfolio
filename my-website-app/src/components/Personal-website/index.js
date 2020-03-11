@@ -12,7 +12,7 @@ export default function () {
                         </div>
                         <div className="box__project-info">
                             <div className="box__title">
-                                <h3>Personal Website  🖥</h3>
+                                <h3>Personal Portfolio  🖥</h3>
                             </div>
                             <div className="box__direct-access">
                                 <p>Have a look to the project</p>
@@ -21,7 +21,7 @@ export default function () {
                                 </a>
                             </div>
                             <p className="box__text">
-                                Project duration: 2/3 days <br />
+                                Technologies used: HTML, CSS, SASS, Javascript, React, Node.js<br />
                                 <br /> This project is a personal website to show my projects, information an more. 
                                 It's a visual way to open a door between myself and the world. Feel free to have a look, make me comments and give me any feedback to improve it.             
                             </p>
