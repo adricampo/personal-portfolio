@@ -11,19 +11,23 @@ export default function () {
                     <p className="info__text">
                         Graduated as Organization Engineer at UAB, in the last year of the college I made an exchange program to the University of Applied Sciences Munich. Year and a half after, I finished the Master degree in Project Management at UPC. 
                         Background as a supply chain manager in lead companies as <span className="bolder">MANGO</span> and <span className="bolder">MONDELEZ</span>, also experience as project manager in many logistic and safety projects in <span className="bolder">LOGISFASHION</span> and <span className="bolder">DANONE</span>.                        
+                        <br /> 
+                        <br /> 
                         In summer of 2019 I decided to change my life, I made the decision to focus my career into the IT sector and I started to looking for courses to learn programming. In September I enrolled into <span className="bolder">SKYLAB CODERS ACADEMY BOOTCAMP</span> and I finished this course which is specialized in MERN technologies in December.                         
                         <br />
-                        Now I am looking for a job opportunity as a <span className="bolder">FULL STACK DEVELOPER</span> that allows me to start this new stage, using the following technologies:                     
+                        Now I am looking for a job opportunity as a <span className="bolder">FULL STACK DEVELOPER</span> that allows me to start this new stage.                  
                     </p>
                     <p className="info__text"> 
                         <br />  
-                        Front-End: HTML5 / CSS3 / SASS / CSS / BEM / JS / ReactJS    
+                        <span className="bolder">Fields of knowlege:</span>   
+                        <br />  
+                        HTML5 | CSS3 | SASS (BEM & SUIT) | Javascript | React   
                         <br />                   
-                        Back-End: NodeJS / Express / MongoDB / Mongoose / REST API    
+                        NodeJS | Express | MongoDB | Mongoose | REST API    
                         <br />                     
-                        Testing: Jasmine, Mocha, Chai, Jest                        
+                        Jasmine | Mocha | Chai | Jest                        
                         <br />
-                        Other: Git
+                        Git | Postman
                     </p>
                 </div>
             </div>

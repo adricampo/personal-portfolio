@@ -12,12 +12,14 @@ export default function () {
                         </div>
                         <div className="box__project-info">
                             <div className="box__title">
-                                <h3>Time2Padel 🎾</h3>
+                                <a className="box__container link" href="https://time2padel.herokuapp.com/">
+                                    <h3>Time2Padel 🎾</h3>
+                                </a>
                             </div>
                             <div className="box__direct-access">
-                                <p>Have a look to the project :</p>
-                                <a className="box__container link" href="https://time2padel.herokuapp.com/">
-                                    <img className="box__icon" src="./img/zoom.png" href="https://time2padel.herokuapp.com/"/>
+                                <p className="box__message">Click on the title to have a look to the project or check the source code here =></p>
+                                <a className="box__container link" href="https://github.com/adricampo/time2padel">
+                                    <img className="box__icon" src="./img/github_icon-512.png" href="https://github.com/adricampo/time2padel"/>
                                 </a>
                             </div>
                             <p className="box__text">
