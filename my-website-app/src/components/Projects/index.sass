@@ -1,171 +1,183 @@
-.projects-nav
+.projects
+    width: 100vw
+    height: 88vh
+    position: relative
+    top: 12vh
+    background: url("/img/bg-5.JPG")
+    background-repeat: no-repeat
+    background-size: cover
+    align-items: center
     @media only screen and (max-width: 1023px)
-        width: 96%
-        height: 100%
-        display: grid
-        grid-template-areas: "padel" "beer" "portfolio" "gnomesreact" "gnomesredux" "adevinta"
-        grid-template-rows: 17% 17% 17% 17% 17% 17%
-        grid-template-columns: 100%
+        top: 8vh
+        height: 92vh
+    .projects-nav
+        @media only screen and (max-width: 1023px)
+            width: 96%
+            height: 94%
+            display: grid
+            grid-template-areas: "padel" "beer" "portfolio" "gnomesreact" "gnomesredux" "adevinta"
+            grid-template-rows: 16% 17% 17% 17% 17% 16%
+            grid-template-columns: 100%
 
-        overflow-x: auto
-        position: absolute
-        top: 14vh
-        left: 2vw
-        z-index: 100
-        align-items: center
-        font-size: 80%
-        font-weight: bold
-        margin-bottom: 2%
-    @media only screen and (min-width: 1024px)
-        width: 99%
-        display: grid
-        grid-template-areas: "padel padel beer" "portfolio gnomesreact gnomesreact" "gnomesredux gnomesredux adevinta"
-        grid-template-rows: 33% 33% 33%
-        grid-template-columns: 33% 33% 33%
-
-        overflow: auto
-        position: absolute
-        top: 15vh
-        left: 1vw
-        z-index: 100
-        align-items: center
-        font-size: 175%
-        font-weight: bold
-    .nav-menu
-        &__item-container1
-            grid-area: padel
-            height: 28vh
-            cursor: pointer
-            background: url("/img/time2padel-bg.jpg")
-            background-repeat: no-repeat
-            background-size: cover
-            @media only screen and (max-width: 1023px)
-                height: 16vh
-        &__item1
-            height: 100%
-            display: flex
-            justify-content: center
+            overflow-x: auto
+            position: absolute
+            top: 3vh
+            left: 2vw
+            z-index: 100
             align-items: center
-            -webkit-text-stroke: 0.2px black
-            color: #f4e32d
-            font-family: 'Baloo Bhai'
-            font-size: 200%
-            text-decoration: none
-            &:hover
-                cursor: pointer
-                transform: scale(1.1) perspective(1px)
+            font-size: 80%
+            font-weight: bold
+            
+        @media only screen and (min-width: 1024px)
+            width: 100%
+            display: grid
+            grid-template-areas: "padel padel gnomesreact" "beer adevinta adevinta" "gnomesredux gnomesredux portfolio"
+            grid-template-rows: 33% 33% 33% 
+            grid-template-columns: 33% 33% 33% 
 
-        &__item-container2
-            grid-area: beer
-            height: 28vh
-            cursor: pointer
-            background: url("/img/beer-bg.jpg")
-            background-repeat: no-repeat
-            background-size: cover
-            @media only screen and (max-width: 1023px)
-                height: 16vh
-        &__item2
-            height: 100%
-            display: flex
-            justify-content: center
+            overflow: auto
+            position: absolute
+            top: 4%
+            left: 0.5%
+            z-index: 100
             align-items: center
-            -webkit-text-stroke: 0.2px black
-            color: #eca114
-            font-family: 'Baloo Bhai'
-            font-size: 200%
-            text-decoration: none
-            &:hover
+            font-size: 175%
+            font-weight: bold
+        .nav-menu
+            &__item-container1
+                grid-area: padel
+                height: 27vh
                 cursor: pointer
-                transform: scale(1.1) perspective(1px)
+                background: url("/img/time2padel-bg.jpg")
+                background-repeat: no-repeat
+                background-size: cover
+                @media only screen and (max-width: 1023px)
+                    height: 13vh
+            &__item1
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                -webkit-text-stroke: 0.2px black
+                color: #f4e32d
+                font-family: 'Baloo Bhai'
+                font-size: 160%
+                text-decoration: none
+                &:hover
+                    cursor: pointer
+                    transform: scale(1.1) perspective(1px)
 
-        &__item-container3
-            grid-area: portfolio
-            height: 28vh
-            cursor: pointer
-            background: url("/img/portfolio-bg.jpg")
-            background-repeat: no-repeat
-            background-size: cover
-            @media only screen and (max-width: 1023px)
-                height: 16vh
-        &__item3
-            height: 100%
-            display: flex
-            justify-content: center
-            align-items: center
-            -webkit-text-stroke: 0.2px black
-            color: #1f77b9
-            font-family: 'Baloo Bhai'
-            font-size: 200%
-            text-decoration: none
-            &:hover
+            &__item-container2
+                grid-area: beer
+                height: 27vh
                 cursor: pointer
-                transform: scale(1.1) perspective(1px)
+                background: url("/img/beer-bg.jpg")
+                background-repeat: no-repeat
+                background-size: cover
+                @media only screen and (max-width: 1023px)
+                    height: 13vh
+            &__item2
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                -webkit-text-stroke: 0.2px black
+                color: #eca114
+                font-family: 'Baloo Bhai'
+                font-size: 160%
+                text-decoration: none
+                &:hover
+                    cursor: pointer
+                    transform: scale(1.1) perspective(1px)
 
-        &__item-container4
-            grid-area: gnomesreact
-            height: 28vh
-            cursor: pointer
-            background: url("/img/gnomeworld-bg.png")
-            background-repeat: no-repeat
-            background-size: cover
-            @media only screen and (max-width: 1023px)
-                height: 16vh
-        &__item4
-            height: 100%
-            display: flex
-            justify-content: center
-            align-items: center
-            -webkit-text-stroke: 0.2px black
-            color: #1ee9f0
-            font-family: 'Baloo Bhai'
-            font-size: 200%
-            text-decoration: none
-            &:hover
+            &__item-container3
+                grid-area: portfolio
+                height: 27vh
                 cursor: pointer
-                transform: scale(1.1) perspective(1px)
+                background: url("/img/portfolio-bg.jpg")
+                background-repeat: no-repeat
+                background-size: cover
+                @media only screen and (max-width: 1023px)
+                    height: 13vh
+            &__item3
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                -webkit-text-stroke: 0.2px black
+                color: #1f77b9
+                font-family: 'Baloo Bhai'
+                font-size: 160%
+                text-decoration: none
+                &:hover
+                    cursor: pointer
+                    transform: scale(1.1) perspective(1px)
 
-        &__item-container5
-            grid-area: gnomesredux
-            height: 28vh
-            cursor: pointer
-            background: url("/img/gnomeworld-bg.png")
-            background-repeat: no-repeat
-            background-size: cover
-            @media only screen and (max-width: 1023px)
-                height: 16vh
-        &__item5
-            height: 100%
-            display: flex
-            justify-content: center
-            align-items: center
-            -webkit-text-stroke: 0.2px black
-            color: #aa0294
-            font-family: 'Baloo Bhai'
-            font-size: 200%
-            text-decoration: none
-            &:hover
+            &__item-container4
+                grid-area: gnomesreact
+                height: 27vh
                 cursor: pointer
-                transform: scale(1.1) perspective(1px)
+                background: url("/img/gnomeworld-bg.png")
+                background-repeat: no-repeat
+                background-size: cover
+                @media only screen and (max-width: 1023px)
+                    height: 13vh
+            &__item4
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                -webkit-text-stroke: 0.2px black
+                color: #1ee9f0
+                font-family: 'Baloo Bhai'
+                font-size: 160%
+                text-decoration: none
+                &:hover
+                    cursor: pointer
+                    transform: scale(1.1) perspective(1px)
 
-        &__item-container6
-            grid-area: adevinta
-            height: 28vh
-            cursor: pointer
-            background: url("/img/adevinta-bg.png")
-            background-repeat: no-repeat
-            background-size: cover
-            @media only screen and (max-width: 1023px)
-                height: 16vh
-        &__item6
-            height: 100%
-            display: flex
-            justify-content: center
-            align-items: center
-            -webkit-text-stroke: 0.2px black
-            color: #b1646a
-            font-family: 'Baloo Bhai'
-            font-size: 200%
-            text-decoration: none
-            &:hover
+            &__item-container5
+                grid-area: gnomesredux
+                height: 27vh
                 cursor: pointer
-                transform: scale(1.1) perspective(1px)
+                background: url("/img/gnomeworld-bg.png")
+                background-repeat: no-repeat
+                background-size: cover
+                @media only screen and (max-width: 1023px)
+                    height: 13vh
+            &__item5
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                -webkit-text-stroke: 0.2px black
+                color: #aa0294
+                font-family: 'Baloo Bhai'
+                font-size: 160%
+                text-decoration: none
+                &:hover
+                    cursor: pointer
+                    transform: scale(1.1) perspective(1px)
+
+            &__item-container6
+                grid-area: adevinta
+                height: 27vh
+                cursor: pointer
+                background: url("/img/adevinta-bg.png")
+                background-repeat: no-repeat
+                background-size: cover
+                @media only screen and (max-width: 1023px)
+                    height: 13vh
+            &__item6
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                -webkit-text-stroke: 0.2px black
+                color: #b1646a
+                font-family: 'Baloo Bhai'
+                font-size: 160%
+                text-decoration: none
+                &:hover
+                    cursor: pointer
+                    transform: scale(1.1) perspective(1px)

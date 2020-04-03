@@ -9,8 +9,8 @@ export default function ({ onProjects }) {
                 </div> */}
                 <div className="myName__container container">
                     <div className="container__titles titles">
-                        <h2>Adri Campo</h2>
-                        <h4>Junior Full-Stack Developer</h4>
+                        <h2>Adri Campo · Junior Full-Stack Developer</h2>
+                        {/* <h4 className="titles__direction2">Junior Full-Stack Developer</h4> */}
                         {/* <h5>living and learning in Badalona, Barcelona 😎✌🏻</h5> */}
                         <button className="titles__button" onClick={event => {
                             event.preventDefault()
