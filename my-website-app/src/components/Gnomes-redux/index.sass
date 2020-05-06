@@ -69,10 +69,11 @@
                 justify-content: center
                 flex-direction: column
                 align-self: center
-                margin-top: 0.5%
                 letter-spacing: 1px
                 line-height: 22px
                 font-size: 80%
+            @media only screen and (min-width: 1400px)
+                margin-top: -4%
             h3
                 color: black
                 @media only screen and (max-width: 1023px)
@@ -84,6 +85,9 @@
                     margin-top: -4.5%
                     font-size: 120%
                     font-family: 'Baloo Bhai'
+                @media only screen and (min-width: 1400px)
+                    margin-top: -1.5%
+                    margin-bottom: 0.5%
 
         &__direct-access
             @media only screen and (max-width: 1023px)
@@ -116,6 +120,9 @@
             @media only screen and (min-width: 1024px)
                 width: 30%
                 margin-left: -35%
+            @media only screen and (min-width: 1400px)
+                width: 23%  
+                margin-left: -212%
             &:hover
                 cursor: pointer
                 transform: scale(1.2) perspective(1px)

@@ -13,7 +13,7 @@ export default function () {
                         <div className="box__project-info">
                             <div className="box__title">
                                 <a className="box__container link" href="https://gnomes-react.netlify.com">
-                                    <h3>AXA Gnomes Test React 🍄</h3>
+                                    <h3>Gnomes World React 🍄</h3>
                                 </a>
                             </div>
                             <div className="box__direct-access">
