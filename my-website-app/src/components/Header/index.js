@@ -3,7 +3,7 @@ import './index.sass'
 export default function ({onHomePage, onAboutMe, onProjects}) {
     return <>
         <nav className="nav nav-menu">
-            {/* <img className="nav-menu__logo" src="./img/logoAC.png"/> */}
+            {/* <img className="nav-menu__logo" src="./img/logo_size.jpg"/> */}
             <a href="#" className="nav-menu__item link" onClick={event => {
                 event.preventDefault()
 

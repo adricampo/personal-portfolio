@@ -12,14 +12,14 @@ export default function () {
                         </div>
                         <div className="box__project-info">
                             <div className="box__title">
-                                <a className="box__container link" href="https://adricampo.github.io/adevinta-test-vanilla/">
-                                    <h3>Adevinta Movies/Series Test 🎥</h3>
+                                <a className="box__container link" href="https://adricampo.github.io/film-store/">
+                                    <h3>Movies/Series Database 🎥</h3>
                                 </a>
                             </div>
                             <div className="box__direct-access">
                                 <p className="box__message">Click on the title to have a look to the project or check the source code here =></p>
-                                <a className="box__container link" href="https://github.com/adricampo/adevinta-test-vanilla">
-                                    <img className="box__icon" src="./img/github_icon-512.png" href="https://github.com/adricampo/adevinta-test-vanilla"/>
+                                <a className="box__container link" href="https://github.com/adricampo/film-store">
+                                    <img className="box__icon" src="./img/github_icon-512.png" href="https://github.com/adricampo/film-store"/>
                                 </a>
                             </div>
                             <p className="box__text">

@@ -32,21 +32,21 @@ export default function ({ onTime2Padel, onSkyBeer, onPersonalWebsite, onGnomesR
 
                     onGnomesReact();
                 }}>
-                    <a href="#" className="nav-menu__item4">Gnomes - React</a>
+                    <a href="#" className="nav-menu__item4">GnomesWorld (1)</a>
                 </div>
                 <div className="nav-menu__item-container5" onClick={event => {
                     event.preventDefault()
 
                     onGnomesRedux();
                 }}>
-                    <a href="#" className="nav-menu__item5">Gnomes - Redux</a>
+                    <a href="#" className="nav-menu__item5">GnomesWorld (2)</a>
                 </div>
                 <div className="nav-menu__item-container6" onClick={event => {
                     event.preventDefault()
 
                     onAdevintaVanilla();
                 }}>
-                    <a href="#" className="nav-menu__item6">Adevinta - Vanilla JS</a>
+                    <a href="#" className="nav-menu__item6">FilmStore</a>
                 </div>
             </nav>
         </section>
