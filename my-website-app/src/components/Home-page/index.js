@@ -7,7 +7,7 @@ export default function ({ onProjects }) {
             <section className="myName">
                 <div className="myName__container container">
                     <div className="container__titles titles">
-                    <h2>Hi I'm <span className="span">Adri Campo</span></h2>
+                    <h2>Hi I'm Adri Campo</h2>
                     <Typewriter
                         options={{
                             strings: 

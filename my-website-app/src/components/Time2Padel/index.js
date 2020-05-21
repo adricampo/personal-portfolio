@@ -1,8 +1,19 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 import './index.sass'
-export default function () {
+
+export default withRouter(function ({ history }) {
+    function onGoBack() {
+        history.push('/projects-container')
+    }
+
     return <>
             <section className="time2padel">
+                    <i id="back-button" class="fas fa-arrow-circle-left" onClick={ event => {
+                        event.preventDefault()
+
+                        onGoBack()
+                    }}></i>
                     <div className="time2padel__box box">
                         <div className="box__images images">
                             <img className="images__image" src="./img/time2padel-2.png"/>
@@ -33,4 +44,4 @@ export default function () {
                     </div>
             </section>
         </>
-}
+})

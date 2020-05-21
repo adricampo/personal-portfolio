@@ -46,7 +46,7 @@ export default withRouter(function ({ history }) {
 
     return ( 
         <>
-            { <> <Header onHomePage={handleGoToHomePage} onAboutMe={handleGoToAboutMe} onProjects={handleGoToProjects}/> 
+            { <> <Header onHomePage={handleGoToHomePage} onAboutMe={handleGoToAboutMe} onProjects={handleGoToProjects} /> 
                     <Route exact path="/" render={() => <Redirect to="/home-page" /> }/>
                     <Route path="/home-page" render={() => <HomePage onProjects={handleGoToProjects} /> }/>  
                     <Route path="/about-me" render={() => <AboutMe /> }/>

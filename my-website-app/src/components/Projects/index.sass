@@ -1,43 +1,38 @@
 .projects
     width: 100vw
-    height: 88vh
     position: relative
     top: 12vh
     background-color: #eee0a1
     align-items: center
     @media only screen and (max-width: 1023px)
         top: 8vh
-        height: 92vh
     .projects-nav
+        background-color: #eee0a1
         @media only screen and (max-width: 1023px)
-            width: 96%
-            height: 94%
-            display: grid
-            grid-template-areas: "padel" "beer" "portfolio" "gnomesreact" "gnomesredux" "adevinta"
-            grid-template-rows: 16% 17% 17% 17% 17% 16%
-            grid-template-columns: 100%
+            width: 100%
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            // display: grid
+            // grid-template-areas: "padel" "beer" "portfolio" "gnomesreact" "gnomesredux" "adevinta"
+            // grid-template-rows: 18% 18% 18% 18% 18% 18%
+            // grid-template-columns: 100%
 
             overflow-x: auto
-            position: absolute
-            top: 3vh
-            left: 2vw
-            z-index: 100
             align-items: center
             font-size: 80%
             font-weight: bold
-            
         @media only screen and (min-width: 1024px)
             width: 100%
-            display: grid
-            grid-template-areas: "padel padel gnomesreact" "beer adevinta adevinta" "gnomesredux gnomesredux portfolio"
-            grid-template-rows: 33% 33% 33% 
-            grid-template-columns: 33% 33% 33% 
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            // display: grid
+            // grid-template-areas: "padel adevinta gnomesreact" "beer beer beer" "gnomesredux gnomesredux portfolio"
+            // grid-template-rows: 33% 33% 33% 
+            // grid-template-columns: 33% 33% 34% 
 
             overflow: auto
-            position: absolute
-            top: 4%
-            left: 0.5%
-            z-index: 100
             align-items: center
             font-size: 175%
             font-weight: bold
@@ -45,16 +40,19 @@
             font-size: 215%
         .nav-menu
             &__item-container1
-                grid-area: padel
-                height: 27vh
+                //grid-area: padel
+                width: 33.33%
+                height: 20rem
                 cursor: pointer
-                background: url("/img/time2padel-bg.jpg")
+                background: url("/img/padel-bg.jpg")
                 background-repeat: no-repeat
-                background-size: cover
+                background-size: 100% 100%
                 @media only screen and (max-width: 1023px)
-                    height: 13vh
+                    height: 19rem
+                    width: 100%
             &__item1
                 height: 100%
+                //width: 100vw
                 display: flex
                 justify-content: center
                 align-items: center
@@ -63,21 +61,43 @@
                 font-family: 'Baloo Bhai'
                 font-size: 160%
                 text-decoration: none
+                opacity: 0
+                transform: scale(0.5)
+                -ms-transform: scale(0.5) // IE 9
+                -moz-transform: scale(0.5) // Firefox
+                -webkit-transform: scale(0.5) // Safari and Chrome
+                -o-transform: scale(0.5) // Opera
+                -webkit-transition: all 500ms ease-in-out // IE 9
+                -moz-transition: all 500ms ease-in-out // Firefox
+                -ms-transition: all 500ms ease-in-out // Safari and Chrome
+                -o-transition: all 500ms ease-in-out // Opera
+                @media only screen and (max-width: 1023px)
+                    opacity: 1
+                    font-size: 6rem
+                    text-align: center
                 &:hover
                     cursor: pointer
-                    transform: scale(1.1) perspective(1px)
+                    opacity: 1
+                    transform: scale(1)
+                    -ms-transform: scale(1) // IE 9
+                    -moz-transform: scale(1) // Firefox
+                    -webkit-transform: scale(1) // Safari and Chrome
+                    -o-transform: scale(1) // Opera
 
             &__item-container2
-                grid-area: beer
-                height: 27vh
+                //grid-area: beer
+                width: 33.33%
+                height: 20rem
                 cursor: pointer
                 background: url("/img/beer-bg.jpg")
                 background-repeat: no-repeat
                 background-size: cover
                 @media only screen and (max-width: 1023px)
-                    height: 13vh
+                    height: 19rem
+                    width: 100%
             &__item2
                 height: 100%
+                //width: 100vw
                 display: flex
                 justify-content: center
                 align-items: center
@@ -86,44 +106,88 @@
                 font-family: 'Baloo Bhai'
                 font-size: 160%
                 text-decoration: none
+                opacity: 0
+                transform: scale(0.5)
+                -ms-transform: scale(0.5) // IE 9
+                -moz-transform: scale(0.5) // Firefox
+                -webkit-transform: scale(0.5) // Safari and Chrome
+                -o-transform: scale(0.5) // Opera
+                -webkit-transition: all 500ms ease-in-out // IE 9
+                -moz-transition: all 500ms ease-in-out // Firefox
+                -ms-transition: all 500ms ease-in-out // Safari and Chrome
+                -o-transition: all 500ms ease-in-out // Opera
+                @media only screen and (max-width: 1023px)
+                    opacity: 1
+                    font-size: 6rem
+                    text-align: center
                 &:hover
                     cursor: pointer
-                    transform: scale(1.1) perspective(1px)
+                    opacity: 1
+                    transform: scale(1)
+                    -ms-transform: scale(1) // IE 9
+                    -moz-transform: scale(1) // Firefox
+                    -webkit-transform: scale(1) // Safari and Chrome
+                    -o-transform: scale(1) // Opera
 
             &__item-container3
-                grid-area: portfolio
-                height: 27vh
+                //grid-area: portfolio
+                width: 33.33%
+                height: 20rem
                 cursor: pointer
                 background: url("/img/portfolio-bg.jpg")
                 background-repeat: no-repeat
-                background-size: cover
+                background-size: 100% 100%
                 @media only screen and (max-width: 1023px)
-                    height: 13vh
+                    height: 19rem
+                    width: 100%
             &__item3
                 height: 100%
+                //width: 100vw
                 display: flex
                 justify-content: center
                 align-items: center
                 -webkit-text-stroke: 0.2px black
-                color: #1f77b9
+                color: #7493f8
                 font-family: 'Baloo Bhai'
                 font-size: 160%
                 text-decoration: none
+                opacity: 0
+                transform: scale(0.5)
+                -ms-transform: scale(0.5) // IE 9
+                -moz-transform: scale(0.5) // Firefox
+                -webkit-transform: scale(0.5) // Safari and Chrome
+                -o-transform: scale(0.5) // Opera
+                -webkit-transition: all 500ms ease-in-out // IE 9
+                -moz-transition: all 500ms ease-in-out // Firefox
+                -ms-transition: all 500ms ease-in-out // Safari and Chrome
+                -o-transition: all 500ms ease-in-out // Opera
+                @media only screen and (max-width: 1023px)
+                    opacity: 1
+                    font-size: 6rem
+                    text-align: center
                 &:hover
                     cursor: pointer
-                    transform: scale(1.1) perspective(1px)
+                    opacity: 1
+                    transform: scale(1)
+                    -ms-transform: scale(1) // IE 9
+                    -moz-transform: scale(1) // Firefox
+                    -webkit-transform: scale(1) // Safari and Chrome
+                    -o-transform: scale(1) // Opera
 
             &__item-container4
-                grid-area: gnomesreact
-                height: 27vh
+                //grid-area: gnomesreact
+                width: 33.33%
+                height: 20rem
                 cursor: pointer
-                background: url("/img/gnomeworld-bg.png")
+                background: url("/img/gnomesworld-bg.jpg")
                 background-repeat: no-repeat
                 background-size: cover
                 @media only screen and (max-width: 1023px)
-                    height: 13vh
+                    height: 19rem
+                    width: 100%
             &__item4
                 height: 100%
+                //width: 100vw
                 display: flex
                 justify-content: center
                 align-items: center
@@ -132,52 +196,115 @@
                 font-family: 'Baloo Bhai'
                 font-size: 160%
                 text-decoration: none
+                opacity: 0
+                transform: scale(0.5)
+                -ms-transform: scale(0.5) // IE 9
+                -moz-transform: scale(0.5) // Firefox
+                -webkit-transform: scale(0.5) // Safari and Chrome
+                -o-transform: scale(0.5) // Opera
+                -webkit-transition: all 500ms ease-in-out // IE 9
+                -moz-transition: all 500ms ease-in-out // Firefox
+                -ms-transition: all 500ms ease-in-out // Safari and Chrome
+                -o-transition: all 500ms ease-in-out // Opera
+                @media only screen and (max-width: 1023px)
+                    opacity: 1
+                    font-size: 6rem
+                    text-align: center
                 &:hover
                     cursor: pointer
-                    transform: scale(1.1) perspective(1px)
+                    opacity: 1
+                    transform: scale(0.8)
+                    -ms-transform: scale(0.8) // IE 9
+                    -moz-transform: scale(0.8) // Firefox
+                    -webkit-transform: scale(0.8) // Safari and Chrome
+                    -o-transform: scale(0.8) // Opera
 
             &__item-container5
-                grid-area: gnomesredux
-                height: 27vh
+                //grid-area: gnomesredux
+                width: 33.33%
+                height: 20rem
                 cursor: pointer
-                background: url("/img/gnomeworld-bg.png")
+                background: url("/img/filmstore-bg.jpg")
                 background-repeat: no-repeat
                 background-size: cover
                 @media only screen and (max-width: 1023px)
-                    height: 13vh
+                    height: 19rem
+                    width: 100%
             &__item5
                 height: 100%
+                //width: 100vw
                 display: flex
                 justify-content: center
                 align-items: center
                 -webkit-text-stroke: 0.2px black
-                color: #aa0294
+                color: #eb5035
                 font-family: 'Baloo Bhai'
                 font-size: 160%
                 text-decoration: none
+                opacity: 0
+                transform: scale(0.5)
+                -ms-transform: scale(0.5) // IE 9
+                -moz-transform: scale(0.5) // Firefox
+                -webkit-transform: scale(0.5) // Safari and Chrome
+                -o-transform: scale(0.5) // Opera
+                -webkit-transition: all 500ms ease-in-out // IE 9
+                -moz-transition: all 500ms ease-in-out // Firefox
+                -ms-transition: all 500ms ease-in-out // Safari and Chrome
+                -o-transition: all 500ms ease-in-out // Opera
+                @media only screen and (max-width: 1023px)
+                    opacity: 1
+                    font-size: 6rem
+                    text-align: center
                 &:hover
                     cursor: pointer
-                    transform: scale(1.1) perspective(1px)
+                    opacity: 1
+                    transform: scale(1)
+                    -ms-transform: scale(1) // IE 9
+                    -moz-transform: scale(1) // Firefox
+                    -webkit-transform: scale(1) // Safari and Chrome
+                    -o-transform: scale(1) // Opera
 
             &__item-container6
-                grid-area: adevinta
-                height: 27vh
+                //grid-area: adevinta
+                width: 33.33%
+                height: 20rem
                 cursor: pointer
-                background: url("/img/adevinta-bg.png")
+                background: url("/img/gnomesworld2-bg.jpg")
                 background-repeat: no-repeat
                 background-size: cover
                 @media only screen and (max-width: 1023px)
-                    height: 13vh
+                    height: 19rem
+                    width: 100%
             &__item6
                 height: 100%
+                //width: 100vw
                 display: flex
                 justify-content: center
                 align-items: center
                 -webkit-text-stroke: 0.2px black
-                color: #b1646a
+                color: #c320d8
                 font-family: 'Baloo Bhai'
                 font-size: 160%
                 text-decoration: none
+                opacity: 0
+                transform: scale(0.5)
+                -ms-transform: scale(0.5) // IE 9
+                -moz-transform: scale(0.5) // Firefox
+                -webkit-transform: scale(0.5) // Safari and Chrome
+                -o-transform: scale(0.5) // Opera
+                -webkit-transition: all 500ms ease-in-out // IE 9
+                -moz-transition: all 500ms ease-in-out // Firefox
+                -ms-transition: all 500ms ease-in-out // Safari and Chrome
+                -o-transition: all 500ms ease-in-out // Opera
+                @media only screen and (max-width: 1023px)
+                    opacity: 1
+                    font-size: 6rem
+                    text-align: center
                 &:hover
                     cursor: pointer
-                    transform: scale(1.1) perspective(1px)
+                    opacity: 1
+                    transform: scale(0.8)
+                    -ms-transform: scale(0.8) // IE 9
+                    -moz-transform: scale(0.8) // Firefox
+                    -webkit-transform: scale(0.8) // Safari and Chrome
+                    -o-transform: scale(0.8) // Opera

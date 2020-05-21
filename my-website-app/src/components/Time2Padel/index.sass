@@ -1,3 +1,15 @@
+#back-button
+    color: black
+    font-size: 300%
+    width: 8%
+    align-self: center
+    display: flex
+    justify-content: center
+    margin-right: 1.5%
+    &:hover
+        cursor: pointer
+        transform: scale(1.1) perspective(1px)
+
 .time2padel
     @media only screen and (max-width: 1023px)
         position: absolute
@@ -10,12 +22,12 @@
     @media only screen and (min-width: 1024px)
         position: absolute
         display: flex
-        flex-direction: column
+        flex-direction: row
         top: 13.5vh
-        left: 5vw
-        width: 90vw
+        width: 98vw
         height: 88vh
         padding: 1%
+
     .box
         display: flex
         flex-direction: column

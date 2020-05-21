@@ -5,7 +5,7 @@ export default function ({ onTime2Padel, onSkyBeer, onPersonalWebsite, onGnomesR
     
     return <>
         <section className="projects">
-            <nav className="projects-nav nav-menu">
+            <div className="projects-nav nav-menu">
                 <div className="nav-menu__item-container1" onClick={event => {
                     event.preventDefault()
 
@@ -32,23 +32,23 @@ export default function ({ onTime2Padel, onSkyBeer, onPersonalWebsite, onGnomesR
 
                     onGnomesReact();
                 }}>
-                    <a href="#" className="nav-menu__item4">GnomesWorld (1)</a>
+                    <a href="#" className="nav-menu__item4">GnomesWorld React</a>
                 </div>
                 <div className="nav-menu__item-container5" onClick={event => {
                     event.preventDefault()
 
-                    onGnomesRedux();
+                    onAdevintaVanilla();
                 }}>
-                    <a href="#" className="nav-menu__item5">GnomesWorld (2)</a>
+                    <a href="#" className="nav-menu__item5">FilmStore</a>
                 </div>
                 <div className="nav-menu__item-container6" onClick={event => {
                     event.preventDefault()
 
-                    onAdevintaVanilla();
+                    onGnomesRedux();
                 }}>
-                    <a href="#" className="nav-menu__item6">FilmStore</a>
+                    <a href="#" className="nav-menu__item6">GnomesWorld Redux</a>
                 </div>
-            </nav>
+            </div>
         </section>
     </>
 }
