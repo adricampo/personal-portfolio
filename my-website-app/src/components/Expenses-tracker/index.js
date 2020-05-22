@@ -9,13 +9,13 @@ export default withRouter(function ({ history }) {
     }
 
     return <>
-            <section className="time2padel">
+            <section className="expenses-tracker">
                     <i id="back-button" className="fas fa-arrow-circle-left" onClick={ event => {
                         event.preventDefault()
 
                         onGoBack()
                     }}></i>
-                    <div className="time2padel__box box">
+                    <div className="expenses-tracker__box box">
                         <div className="box__images images">
                             <img className="images__image" src="./img/time2padel-2.png"/>
                             <img className="images__image" src="./img/time2padel-1.png"/>
@@ -25,7 +25,7 @@ export default withRouter(function ({ history }) {
 
                         <div className="infoAndUrls">
                             <div className="box__project-info">
-                                <h2 className="box__title">Time2Padel</h2>
+                                <h2 className="box__title">Expenses Tracker</h2>
                                 <p className="box__text">
                                     Technologies used: HTML, CSS, SASS, Javascript, React, Node.js, express, MongoDB, Mongoose, TDD <br />
                                     <br />Time2Padel is an individual project that I have developed for SkylabCoders bootcamp.
@@ -38,12 +38,12 @@ export default withRouter(function ({ history }) {
                             <div className="box__urls urls">
                                 <div className="urls__code code">
                                     <h2 className="code__title">Source Code</h2>
-                                    <a className="code__container link" href="https://github.com/adricampo/time2padel">
-                                        <img className="code__icon" src="./img/github_icon-512.png" href="https://github.com/adricampo/time2padel"/>
+                                    <a className="code__container link" href="">
+                                        <img className="code__icon" src="./img/github_icon-512.png" href=""/>
                                     </a>
                                 </div>
                                 <div className="urls__demo">
-                                    <a className="link" href="https://time2padel.herokuapp.com/">
+                                    <a className="link" href="">
                                         <Button />
                                     </a>
                                 </div>

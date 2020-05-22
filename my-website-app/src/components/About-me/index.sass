@@ -2,29 +2,34 @@
     font-weight: 900
     font-size: 115%
 .about-me
-    height: 100vh
+    position: absolute
+    top: 7vh
     width: 100vw
     display: flex
     flex-direction: column
     justify-content: center
     background-color: #eee0a1
+    @media only screen and (min-width: 1024px)
+        position: absolute
+        top: 4vh
+        
     .welcome
         display: flex
+        align-self: center
+        justify-content: center
+        margin-bottom: 3%
         @media only screen and (max-width: 1023px)
             flex-direction: column
             display: flex
-            height: 100%
             align-items: center
-            justify-content: center
-            margin-top: 7%
         &__image
             border: 1px solid
             background-color: whitesmoke
             @media only screen and (max-width: 1023px)
-                height: 180px
+                height: 200px
                 object-fit: contain
                 border-radius: 1rem
-                margin-top: 4%
+                margin-top: 3%
             @media only screen and (min-width: 1024px)
                 min-width: 30vw
                 max-height: 80vh
@@ -33,7 +38,6 @@
                 margin-top: 6%
         .info
             width: 62%
-            height: 80vh
             padding: 2%
             border: solid 1px
             border-radius: 2rem
@@ -46,19 +50,20 @@
             justify-content: space-evenly
             @media only screen and (max-width: 1023px)
                 width: 95%
-                height: 59vh
-                margin-top: 3%
+                margin-top: 5%
                 margin-left: 0
+                margin-bottom: 5%
                 padding: 3%
                 display: flex
                 flex-direction: column
                 justify-content: space-evenly
             &__title
                 @media only screen and (max-width: 1023px)
-                    font-size: 130%
+                    font-size: 120%
                     font-family: 'Acme', sans-serif
                     display: flex
                     justify-content: center
+                    margin-bottom: -4%
                 @media only screen and (min-width: 1024px)
                     font-size: 220%
                     font-family: 'Acme', sans-serif
@@ -69,7 +74,6 @@
                 @media only screen and (max-width: 1023px)
                     font-size: 53%
                     line-height: 14px
-                    margin-top: -4%
                     padding: 1%
                 @media only screen and (min-width: 1024px)
                     line-height: 25px

@@ -15,6 +15,10 @@ import PersonalWebsite from '../Personal-website'
 import GnomesReact from '../Gnomes-react'
 import GnomesRedux from '../Gnomes-redux'
 import AdevintaVanilla from '../Adevinta-vanilla'
+import MusicLetters from '../Music-letters'
+import GamesStore from '../Games-store';
+import ExpensesTracker from '../Expenses-tracker';
+
 
 
 export default withRouter(function ({ history }) { 
@@ -41,6 +45,11 @@ export default withRouter(function ({ history }) {
 
     function handleGoToAdevintaVanilla() { history.push('/adevinta-vanilla')}
 
+    function handleGoToMusicLetters() { history.push('/music-letters')}
+
+    function handleGoToGamesStore() { history.push('/games-store')}
+
+    function handleGoToExpensesTracker() { history.push('/expenses-tracker')}
 
 // ROUTES
 
@@ -52,13 +61,17 @@ export default withRouter(function ({ history }) {
                     <Route path="/about-me" render={() => <AboutMe /> }/>
                     <Route path="/projects-container" render={() => <ProjectsContainer /> && <Projects onTime2Padel={handleGoToTime2Padel} 
                         onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} onGnomesReact={handleGoToGnomesReact} 
-                        onGnomesRedux={handleGoToGnomesRedux} onAdevintaVanilla={handleGoToAdevintaVanilla} /> }/> 
+                        onGnomesRedux={handleGoToGnomesRedux} onAdevintaVanilla={handleGoToAdevintaVanilla} onMusicLetters={handleGoToMusicLetters} 
+                        onGamesStore={handleGoToGamesStore} onExpensesTracker={handleGoToExpensesTracker} /> }/> 
                     <Route path="/time2padel" render={() => <Time2Padel /> }/> 
                     <Route path="/skybeer" render={() => <SkyBeer /> }/>
                     <Route path="/personal-website" render={() => <PersonalWebsite /> }/>
                     <Route path="/gnomes-react" render={() => <GnomesReact /> }/>
                     <Route path="/gnomes-redux" render={() => <GnomesRedux /> }/>
                     <Route path="/adevinta-vanilla" render={() => <AdevintaVanilla /> }/>
+                    <Route path="/music-letters" render={() => <MusicLetters /> }/>
+                    <Route path="/games-store" render={() => <GamesStore /> }/>
+                    <Route path="/expenses-tracker" render={() => <ExpensesTracker /> }/>
             </> }
 
         </>

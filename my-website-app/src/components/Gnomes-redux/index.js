@@ -1,8 +1,19 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
+import Button from '../Button'
 import './index.sass'
-export default function () {
+
+export default withRouter(function ({ history }) {
+    function onGoBack() {
+        history.push('/projects-container')
+    }
     return <>
             <section className="gnomes-redux">
+                    <i id="back-button" className="fas fa-arrow-circle-left" onClick={ event => {
+                        event.preventDefault()
+
+                        onGoBack()
+                    }}></i>
                     <div className="gnomes-redux__box box">
                         <div className="box__images images">
                             <img className="images__image" src="./img/redux-icon.png"/>
@@ -10,27 +21,34 @@ export default function () {
                             <img className="images__image" src="./img/gnomes-react-3.png"/>
                             <img className="images__image" src="./img/gnomes-react-4.png"/>
                         </div>
-                        <div className="box__project-info">
-                            <div className="box__title">
-                                <a className="box__container link" href="https://gnomes-redux.netlify.com">
-                                    <h3>Gnomes World Redux 🍄</h3>
-                                </a>
+
+                        <div className="infoAndUrls">
+                            <div className="box__project-info">
+                                <h2 className="box__title">Gnomes World Redux</h2>
+                                <p className="box__text">
+                                    Technologies used: HTML, CSS, SASS, Javascript, React, Redux, Node.js <br />
+                                    <br />Gnomes-redux is an individual project developed using React with Redux, version thunk.
+                                    The project has a landing page, another view with a search component that allows the user to find by 
+                                    query and also chose some filters to make a more accurate search and the results, and the last view 
+                                    shows the detail of any of the results.
+                                </p>
                             </div>
-                            <div className="box__direct-access">
-                                <p className="box__message">Click on the title to have a look to the project or check the source code here =></p>
-                                <a className="box__container link" href="https://gnomes-redux.netlify.com">
-                                    <img className="box__icon" src="./img/github_icon-512.png" href="https://gnomes-redux.netlify.com"/>
-                                </a>
+
+                            <div className="box__urls urls">
+                                <div className="urls__code code">
+                                    <h2 className="code__title">Source Code</h2>
+                                    <a className="code__container link" href="https://github.com/adricampo/gnomes-world-redux">
+                                        <img className="code__icon" src="./img/github_icon-512.png" href="https://github.com/adricampo/gnomes-world-redux"/>
+                                    </a>
+                                </div>
+                                <div className="urls__demo">
+                                    <a className="link" href="https://gnomes-react.netlify.com">
+                                        <Button />
+                                    </a>
+                                </div>
                             </div>
-                            <p className="box__text">
-                                Technologies used: HTML, CSS, SASS, Javascript, React, Redux, Node.js <br />
-                                <br />Gnomes-redux is an individual project developed using React with Redux, version thunk.
-                                The project has a landing page, another view with a search component that allows the user to find by 
-                                query and also chose some filters to make a more accurate search and the results, and the last view 
-                                shows the detail of any of the results.
-                            </p>
                         </div>
                     </div>
             </section>
         </>
-}
+})

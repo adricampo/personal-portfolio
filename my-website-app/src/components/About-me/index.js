@@ -18,7 +18,6 @@ export default function () {
                         Now I am looking for a job opportunity as a <span className="bolder">DEVELOPER</span> (front, back or full stack) that allows me to start this new stage.                  
                     </p>
                     <p className="info__text"> 
-                        <br />  
                         <span className="bolder">Fields of knowledge:</span>   
                         <br />  
                         HTML5 | CSS3 | SASS (BEM & SUIT) | Javascript | React   
