@@ -7,6 +7,7 @@ import './index.sass'
 import Header from '../Header'
 import HomePage from '../Home-page'
 import AboutMe from '../About-me'
+import Contact from '../Contact'
 import Projects from '../Projects'
 import ProjectsContainer from '../Projects-container'
 import Time2Padel from '../Time2Padel'
@@ -30,6 +31,8 @@ export default withRouter(function ({ history }) {
     function handleGoToAboutMe() { history.push('/about-me')}
 
     function handleGoToProjects() { history.push('/projects-container')}
+
+    function handleGoToContact() { history.push('/contact')}
 
 // PROJECTS
 
@@ -55,10 +58,11 @@ export default withRouter(function ({ history }) {
 
     return ( 
         <>
-            { <> <Header onHomePage={handleGoToHomePage} onAboutMe={handleGoToAboutMe} onProjects={handleGoToProjects} /> 
+            { <> <Header onHomePage={handleGoToHomePage} onAboutMe={handleGoToAboutMe} onContact={handleGoToContact} onProjects={handleGoToProjects} /> 
                     <Route exact path="/" render={() => <Redirect to="/home-page" /> }/>
                     <Route path="/home-page" render={() => <HomePage onProjects={handleGoToProjects} /> }/>  
                     <Route path="/about-me" render={() => <AboutMe /> }/>
+                    <Route path="/contact" render={() => <Contact /> }/>
                     <Route path="/projects-container" render={() => <ProjectsContainer /> && <Projects onTime2Padel={handleGoToTime2Padel} 
                         onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} onGnomesReact={handleGoToGnomesReact} 
                         onGnomesRedux={handleGoToGnomesRedux} onAdevintaVanilla={handleGoToAdevintaVanilla} onMusicLetters={handleGoToMusicLetters} 
@@ -72,6 +76,7 @@ export default withRouter(function ({ history }) {
                     <Route path="/music-letters" render={() => <MusicLetters /> }/>
                     <Route path="/games-store" render={() => <GamesStore /> }/>
                     <Route path="/expenses-tracker" render={() => <ExpensesTracker /> }/>
+                
             </> }
 
         </>

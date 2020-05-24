@@ -44,7 +44,7 @@ export default withRouter(function ({ history }) {
                                 </div>
                                 <div className="urls__demo">
                                     <a className="link" href="https://time2padel.herokuapp.com/">
-                                        <Button />
+                                        <Button message='SEE DEMO' />
                                     </a>
                                 </div>
                             </div>

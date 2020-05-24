@@ -43,7 +43,7 @@ export default withRouter(function ({ history }) {
                                 </div>
                                 <div className="urls__demo">
                                     <a className="link" href="https://adricampo.github.io/film-store/">
-                                        <Button />
+                                        <Button message='SEE DEMO' />
                                     </a>
                                 </div>
                             </div>

@@ -42,7 +42,7 @@ export default withRouter(function ({ history }) {
                                 </div>
                                 <div className="urls__demo">
                                     <a className="link" href="https://oscarerre.github.io/sky-beer/">
-                                        <Button />
+                                        <Button message='SEE DEMO' />
                                     </a>
                                 </div>
                             </div>
