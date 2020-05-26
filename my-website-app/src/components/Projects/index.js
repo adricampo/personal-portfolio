@@ -11,10 +11,9 @@ export default function ({ onTime2Padel, onSkyBeer, onPersonalWebsite, onGnomesR
     }, 2000)
 
     return <>
-        { cargando ? <Spinner /> : null }
-
-        { !cargando ? 
-            <section className="projects">
+        { cargando 
+        ? <Spinner /> 
+        : <section className="projects">
                 <div className="projects-nav nav-menu">
                     <div className="nav-menu__item-container1" onClick={event => {
                         event.preventDefault()
@@ -82,6 +81,6 @@ export default function ({ onTime2Padel, onSkyBeer, onPersonalWebsite, onGnomesR
                 </div>
             </section> 
 
-          : null }
+        }
     </>
 }

@@ -1,7 +1,7 @@
 #bolder
     font-family: 'Acme', sans-serif
     font-size: 150%
-    
+
 .contact
     height: 100vh
     width: 100vw
@@ -19,61 +19,84 @@
     justify-content: space-evenly
     align-items: center
     background-color: #eee0a1
-    &__client-info
-        margin-top: 6%
+    .client-info
+        margin-top: 5%
         display: flex
         flex-direction: column
-        justify-content: center
+        justify-content: space-evenly
         align-items: center
         width: 100%
         height: 40%
-        @media only screen and (max-width: 1023px)
-            width: 80%
-            margin-top: 13%
-            margin-bottom: -15%
-        .client-info-title
-            font-size: 150%
-            text-align: center
+        &__size
+            width: 90%
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            height: 100%
+            @media only screen and (min-width: 1024px)
+                width: 70%
+                text-align: center
 
+    .title-desktop
+        font-size: 150%
+        margin-top: 4%
+        @media only screen and (max-width: 1023px)
+            display: none
+    .title-mobile
+        margin-top: 6%
+        font-size: 120%
+        text-align: center
+        @media only screen and (min-width: 1024px)
+            display: none
 
     .download-cv
         padding: 1rem
-        background-color: #0000
         display: flex
         flex-direction: row
-        justify-content: center
+        justify-content: space-around
         align-items: center
         width: 100%
-        height: 40%
+        height: 30%
+        background-color: #dbdacd
+        
         @media only screen and (max-width: 1023px)
             width: 90%
+            border-radius: 2rem
             flex-direction: column
             justify-content: space-evenly
             text-align: center
+            border: 2px solid
         &__title
             font-size: 150%
+            margin-top: 3%
+            @media only screen and (max-width: 1023px)
+                font-size: 120%
+                margin-top: 6%
+
         &__info
             width: 70%
             display: flex
             flex-direction: column
-            justify-content: center
+            justify-content: space-evenly
             align-items: center
+            height: 100%
             @media only screen and (max-width: 1023px)
                 width: 100%
                 display: flex
                 justify-items: center
         &__image
             width: 20%
+            display: flex
+            justify-content: center
+            height: 100%
+            align-items: center
             @media only screen and (max-width: 1023px)
-                width: 100%
-                display: flex
-                justify-content: center
-                margin-top: 5%
-
-
+                display: none
 .button-container
     display: flex
     justify-content: center
+    margin-top: -2%
 
 .form-container
     display: flex
@@ -106,8 +129,7 @@
     padding: 0.4rem
 
 .image
-    width: 10rem
-    height: 11rem
+    width: 8rem
+    height: 9rem
     @media only screen and (max-width: 1023px)
-        width: 5rem
-        height: 6rem
+        display: none
