@@ -1,3 +1,7 @@
+#bolder
+    font-family: 'Acme', sans-serif
+    font-size: 150%
+    
 .contact
     height: 100vh
     width: 100vw
@@ -18,14 +22,20 @@
     &__client-info
         margin-top: 6%
         display: flex
+        flex-direction: column
         justify-content: center
         align-items: center
         width: 100%
         height: 40%
         @media only screen and (max-width: 1023px)
             width: 80%
-            margin-top: 0
+            margin-top: 13%
             margin-bottom: -15%
+        .client-info-title
+            font-size: 150%
+            text-align: center
+
+
     .download-cv
         padding: 1rem
         background-color: #0000
@@ -41,8 +51,7 @@
             justify-content: space-evenly
             text-align: center
         &__title
-            font-family: 'Acme', sans-serif
-            font-size: 140%
+            font-size: 150%
         &__info
             width: 70%
             display: flex
@@ -61,6 +70,10 @@
                 justify-content: center
                 margin-top: 5%
 
+
+.button-container
+    display: flex
+    justify-content: center
 
 .form-container
     display: flex

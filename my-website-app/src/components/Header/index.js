@@ -61,11 +61,11 @@ export default function ({onHomePage, onAboutMe, onProjects, onContact}) {
                         <img className="socialmedia__icon" src="./img/github_icon-512.png" href="https://github.com/adricampo" />
                     </a>
                 </div>
-                <div className="socialmedia__info">
+                {/* <div className="socialmedia__info">
                     <a className="socialmedia link" href="mailto:adribdn7@gmail.com">
                         <img className="socialmedia__icon" src="./img/gmail-logo.png" />
                     </a>
-                </div>
+                </div> */}
             </div>
                 {/* </div>
             </section> */}

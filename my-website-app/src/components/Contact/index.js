@@ -3,31 +3,41 @@ import Button from '../Button'
 import './index.sass'
 
 const Contact = () => {
-    const [ userMessage, saveUserMessage ] = useState({
-        name: "",
-        email: "",
-        message: ""
-    })
+    // const [ userMessage, saveUserMessage ] = useState({
+    //     name: "",
+    //     email: "",
+    //     message: ""
+    // })
 
-    // Destructuring userMessage 
-    const { name, email, message } = userMessage;
+    // // Destructuring userMessage 
+    // const { name, email, message } = userMessage;
 
-    // Takes the user information
-    const handleChange = e => {
-        saveUserMessage({
-            ...userMessage,
-            [e.target.name]: e.target.value
-        })
-    }
-
+    // // Takes the user information
+    // const handleChange = e => {
+    //     saveUserMessage({
+    //         ...userMessage,
+    //         [e.target.name]: e.target.value
+    //     })
+    // }
 
     return ( <Fragment>
                 <section className="contact">
                     <div className="contact__container container">
                         <div className="container__client-info">
-                            <form 
+                            <h3 className="client-info-title">
+                                Spot a bug on the site? 
+                                <br />Can the site be improved? 
+                                <br />Want to say hello? 
+                                <br />
+                                <br /><span id="bolder">Whatever, let's talk! </span>
+                            </h3>
+                            <div className="button-container">
+                                <a href="mailto:adribdn7@gmail.com">
+                                    <Button className="button" message='SEND ME A MESSAGE' /> 
+                                </a>
+                            </div>
+                            {/* <form 
                                 className="form-container"
-                                // onSubmit={submitUserMessage}
                             >
                                 <div className="form-group">
                                     <label></label>
@@ -61,14 +71,12 @@ const Contact = () => {
                                         value={message}
                                     ></textarea>
                                 </div>    
-                                {/* <button
+                                <button
                                     type="submit"
                                     className="button form-button"
-                                >SEND MESSAGE</button> */}
-                                <a href="mailto:adribdn7@gmail.com">
-                                    <Button className="button" message='SEND MESSAGE' /> 
-                                </a>
-                            </form>
+                                >SEND MESSAGE</button>
+                            </form> */}
+                                
                         </div>
                         <div className="container__download-cv download-cv">
                             <div className="download-cv__info">
@@ -83,9 +91,9 @@ const Contact = () => {
                                     <Button message='DOWNLOAD MY CV' />
                                 </a>
                             </div>
-                            <div className="download-cv__image">
+                            {/* <div className="download-cv__image">
                                 <img className="image" src="./img/download-cv.png" />
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>

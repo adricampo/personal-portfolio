@@ -14,10 +14,7 @@ export default function ({ onProjects }) {
                             [
                             `I'm a Junior Full Stack Developer.`, 
                             `Based in Barcelona.`, 
-                            `Feel free to have a look to my website.`,
-                            `Currently I'm looking for an opportunity..`,
-                            `..as a Junior Web Developer.`,
-                            `If you're interested please contact me.`
+                            `Currently looking for a job as a Front End Developer.`, 
                             ],
                             autoStart: true,
                             loop: true,
