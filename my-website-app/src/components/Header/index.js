@@ -35,7 +35,7 @@ export default function ({onHomePage, onAboutMe, onProjects, onContact}) {
                         event.preventDefault()
 
                         onToggleMenu(); onProjects(); 
-                    }}>PORTFOLIO</a>
+                    }}>PROJECTS</a>
                     <a className="list__item link" href="#" onClick={event => {
                         event.preventDefault()
 
