@@ -27,7 +27,7 @@ export default withRouter(function ({ history }) {
                                 <h2 className="box__title">Film Store</h2>
                                 <p className="box__text">
                                     Technologies used: HTML, CSS, SASS, Javascript<br />
-                                    <br />Adevinta Test Vanilla, is a technical test done without using any framework, pure javascript. The app lets the
+                                    <br />Film store is a technical test done without using any framework, pure javascript. The app lets the
                                     user to search movies through external API calls and once the results are retrieved, give the user the possibility to
                                     sort by published year or the rating.<br />
                                     <br />             

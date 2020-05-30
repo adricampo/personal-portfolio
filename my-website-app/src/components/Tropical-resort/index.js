@@ -26,7 +26,7 @@ export default withRouter(function ({ history }) {
                                 <h2 className="box__title">Tropical Resort</h2>
                                 <p className="box__text">
                                     Technologies used: CSS (+ styled components), Javascript, Gatsby, GraphQL and DatoCMS. <br />
-                                    <br />Music-letters is an small project developed with React.
+                                    <br />
                                     Tropical Resort is an easy website, with server-side rendering, developed with Gatsby. The aim of that 
                                     project was understand how to use Gatsby and improve the SEO positioning of a website. <br />
                                     <br />             

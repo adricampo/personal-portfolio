@@ -26,7 +26,7 @@ export default withRouter(function ({ history }) {
                                 <h2 className="box__title">Gifs Search</h2>
                                 <p className="box__text">
                                     Technologies used: HTML, CSS, SASS, Javascript, Vue <br />
-                                    <br />Small project done to practice with VueJS. You will find a search var where 
+                                    <br />Gifs search is an small project done to practice with VueJS. You will find a search var where 
                                     you can introduce a text to look for gifs. The gifs come from an external API, provided by Giphy.
                                     Results are listed in a grid and each result is a link that goes to the original Giphy page to take 
                                     the url of the gif or other additional information. <br />
