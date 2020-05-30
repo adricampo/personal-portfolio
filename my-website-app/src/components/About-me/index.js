@@ -15,7 +15,7 @@ export default function () {
                         <br /> 
                         In summer of 2019 I decided to change my life, I made the decision to focus my career into the IT sector and I started looking for courses to learn programming. In September I enrolled into <span className="bolder">SKYLAB CODERS ACADEMY BOOTCAMP</span> and I finished this course, which is specialized in MERN technologies, in December.                         
                         <br />
-                        Now I am looking for a job opportunity as a <span className="bolder">DEVELOPER</span> (front, back or full stack) that allows me to start this new stage.                  
+                        Now I am looking for a job opportunity as a <span className="bolder">DEVELOPER</span> that allows me to start this new stage.                  
                     </p>
                     <p className="info__text"> 
                         <br />

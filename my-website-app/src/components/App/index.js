@@ -19,6 +19,8 @@ import AdevintaVanilla from '../Adevinta-vanilla'
 import MusicLetters from '../Music-letters'
 import GamesStore from '../Games-store';
 import ExpensesTracker from '../Expenses-tracker';
+import TropicalResort from '../Tropical-resort';
+import GifsSearch from '../Gifs-search';
 
 
 
@@ -54,6 +56,10 @@ export default withRouter(function ({ history }) {
 
     function handleGoToExpensesTracker() { history.push('/expenses-tracker')}
 
+    function handleGoToTropicalResort() { history.push('/tropical-resort')}
+    
+    function handleGoToGifsSearch() { history.push('/gifs-search')}
+
 // ROUTES
 
     return ( 
@@ -66,7 +72,8 @@ export default withRouter(function ({ history }) {
                     <Route path="/projects-container" render={() => <ProjectsContainer /> && <Projects onTime2Padel={handleGoToTime2Padel} 
                         onSkyBeer={handleGoToSkyBeer} onPersonalWebsite={handleGoToPersonalWebsite} onGnomesReact={handleGoToGnomesReact} 
                         onGnomesRedux={handleGoToGnomesRedux} onAdevintaVanilla={handleGoToAdevintaVanilla} onMusicLetters={handleGoToMusicLetters} 
-                        onGamesStore={handleGoToGamesStore} onExpensesTracker={handleGoToExpensesTracker} /> }/> 
+                        onGamesStore={handleGoToGamesStore} onExpensesTracker={handleGoToExpensesTracker} onTropicalResort={handleGoToTropicalResort} 
+                        onGifsSearch={handleGoToGifsSearch} /> }/> 
                     <Route path="/time2padel" render={() => <Time2Padel /> }/> 
                     <Route path="/skybeer" render={() => <SkyBeer /> }/>
                     <Route path="/personal-website" render={() => <PersonalWebsite /> }/>
@@ -76,6 +83,8 @@ export default withRouter(function ({ history }) {
                     <Route path="/music-letters" render={() => <MusicLetters /> }/>
                     <Route path="/games-store" render={() => <GamesStore /> }/>
                     <Route path="/expenses-tracker" render={() => <ExpensesTracker /> }/>
+                    <Route path="/tropical-resort" render={() => <TropicalResort /> }/>
+                    <Route path="/gifs-search" render={() => <GifsSearch /> }/>
                 
             </> }
 

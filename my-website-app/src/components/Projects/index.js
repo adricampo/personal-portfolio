@@ -3,17 +3,20 @@ import Spinner from "../Spinner"
 import './index.sass'
 
 export default function ({ onTime2Padel, onSkyBeer, onPersonalWebsite, onGnomesReact, onGnomesRedux, 
-    onAdevintaVanilla, onMusicLetters, onGamesStore, onExpensesTracker }) {
-    const [ cargando, guardarCargando ] = useState(true)
+    onAdevintaVanilla, onMusicLetters, onGamesStore, onExpensesTracker, onTropicalResort, onGifsSearch }) {
+    // const [ cargando, guardarCargando ] = useState(true)
 
-    setTimeout(() => {
-        guardarCargando(false)
-    }, 2000)
+    // setTimeout(() => {
+    //     guardarCargando(false)
+    // }, 2000)
+
+    // { cargando 
+    //     ? <Spinner /> 
+    //     : 
+    // }
 
     return <>
-        { cargando 
-        ? <Spinner /> 
-        : <section className="projects">
+         <section className="projects">
                 <div className="projects-nav nav-menu">
                     <div className="nav-menu__item-container1" onClick={event => {
                         event.preventDefault()
@@ -78,9 +81,21 @@ export default function ({ onTime2Padel, onSkyBeer, onPersonalWebsite, onGnomesR
                     }}>
                         <a href="#" className="nav-menu__item9">Expenses Tracker</a>
                     </div>
+                    <div className="nav-menu__item-container10" onClick={event => {
+                        event.preventDefault()
+
+                        onTropicalResort();
+                    }}>
+                        <a href="#" className="nav-menu__item10">Tropical Resort</a>
+                    </div>
+                    <div className="nav-menu__item-container11" onClick={event => {
+                        event.preventDefault()
+
+                        onGifsSearch();
+                    }}>
+                        <a href="#" className="nav-menu__item11">Gifs Search</a>
+                    </div>
                 </div>
             </section> 
-
-        }
     </>
 }

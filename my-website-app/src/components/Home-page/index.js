@@ -12,7 +12,7 @@ export default function ({ onProjects }) {
                         options={{
                             strings: 
                             [
-                            `I'm a Junior Full Stack Developer.`, 
+                            `I'm a Junior Developer.`, 
                             `Based in Barcelona.`, 
                             `Currently looking for a job as a Front End Developer.`, 
                             ],
