@@ -1,13 +1,24 @@
 import React from 'react'
+import Button from '../Button'
 import './index.sass'
 export default function () {
     return <>
         <section className="about-me">
             <div className="about-me__welcome welcome">
-                <img className="welcome__image" src="./img/aboutme-photo1.jpg"/>
+                <div className="welcome__box box">
+                    <img className="box__image" src="./img/aboutme-photo1.jpg"/>
+                    <div className="buttons-container">
+                        <a href="./cv.pdf" download>
+                            <Button className="button-aboutme" message='DOWNLOAD MY CV' />
+                        </a>
+                        {/* <a href="mailto:adribdn7@gmail.com">
+                            <Button className="button-aboutme" message='SEND ME A MESSAGE' /> 
+                        </a> */}
+                    </div>
+                </div>
                 <div className="welcome__info info">
                     <h2 className="info__title title">LITTLE SUMARY OF MY STORY..</h2>
-                    <br />
+                    <br /> 
                     <p className="info__text">
                         Graduated as Industrial Engineer especialized in management at UAB, in the last year of the college I made an exchange program to the University of Applied Sciences Munich. Year and a half after, I finished the Master degree in Project Management at UPC. 
                         Background as a supply chain manager in lead companies as <span className="bolder">MANGO</span> and <span className="bolder">MONDELEZ</span>, also experience as project manager in many logistic and safety projects in <span className="bolder">LOGISFASHION</span> and <span className="bolder">DANONE</span>.                        

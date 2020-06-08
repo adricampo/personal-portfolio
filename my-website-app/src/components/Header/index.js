@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './index.sass'
 
-export default function ({onHomePage, onAboutMe, onProjects, onContact}) {
+export default function ({onHomePage, onAboutMe, onProjects}) {
     const [ toggleMenu, setToggleMenu ] = useState(false)
     
     function onToggleMenu() {
@@ -41,11 +41,6 @@ export default function ({onHomePage, onAboutMe, onProjects, onContact}) {
 
                         onToggleMenu(); onAboutMe(); 
                     }}>ABOUT ME</a>
-                    <a className="list__item link" href="#" onClick={event => {
-                        event.preventDefault()
-
-                        onToggleMenu(); onContact(); 
-                    }}>CONTACT</a>
                 </ul>
             </div>
             {/* <section className="contact">   

@@ -29,11 +29,18 @@ export default function ({ onProjects }) {
                             .start();
                         }}
                         />
-                        <button className="titles__button" onClick={event => {
+                        {/* <button className="titles__button" onClick={event => {
                             event.preventDefault()
 
                             onProjects();
-                        }}>Check out my work</button>
+                        }}>Check out my work</button> */}
+                        <div className="button_cont" align="center" onClick={event => {
+                            event.preventDefault()
+
+                            onProjects();
+                        }}>
+                            <a className="button-styles" target="_blank" rel="nofollow noopener">Check out my work</a>
+                        </div>
                     </div>
                 </div>
             </section>
