@@ -15,7 +15,12 @@
     "node-sass": "^4.14.1"
   },
   "scripts": {
-   
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --runInBand --no-cache",
+    "test:debug": "react-scripts inspect test --runInBand --no-cache",
+    "sass": "sass components/App/index.sass components/App/index.css",
+    "sass:watch": "sass --watch components/App/index.sass components/App/index.css"
   },
   "browserslist": {
     "production": [
