@@ -43,7 +43,7 @@ export default withRouter(function ({ history }) {
                                     </a>
                                 </div>
                                 <div className="urls__demo">
-                                    <a className="link" href="">
+                                    <a className="link" href="/">
                                         {/* <Button message='SEE DEMO' /> */}
                                     </a>
                                 </div>
